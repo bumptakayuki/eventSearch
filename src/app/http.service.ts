@@ -12,7 +12,7 @@ export class HttpService {
     //Web API URL
     // WEB_API_URL: string = "https://connpass.com/api/v1/event/";
     //
-    WEB_API_URL:string = "http://localhost:8888/eventSearch/src/php/api.php";
+    WEB_API_URL:string = "http://ec2-52-88-160-219.us-west-2.compute.amazonaws.com/eventSearch/src/php/api.php";
     CALLBACK = "JSONP_CALLBACK";
 
     constructor(private jsonp:Jsonp) {
