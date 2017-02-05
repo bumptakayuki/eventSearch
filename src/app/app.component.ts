@@ -62,7 +62,7 @@ export class AppComponent implements OnInit {
   places = ['東京都', '神奈川県', '群馬県', '福島県'];
 
   // デフォルト値
-  model = new Hero(18, 'test', this.places[0],'2017-02-04',false, 'test');
+  model = new Hero(18, 'test', this.places[0],null,false,0, 'test');
 
   public existsFlg = true;
 
@@ -71,7 +71,7 @@ export class AppComponent implements OnInit {
   // onSubmit() { this.submitted = true; }
 
   newHero() {
-    this.model = new Hero(42, '','', '2017-02-04',false);
+    this.model = new Hero(42, '','', null,false,0);
   }
 
   //modal 表示用
@@ -157,6 +157,7 @@ export class AppComponent implements OnInit {
 
       this.httpService.getEventData(model,page).subscribe((result) =>{
           this.setEvent(result, i)
+            model.requestCount++;
         },
         (err)=>alert("通信エラー\n" + err) ,
         ()=>{

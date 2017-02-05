@@ -6,6 +6,7 @@ export class Hero {
     public place: string,
     public date,
     public spinner: boolean,
+    public requestCount:number,
     public alterEgo?: string
   ) {  }
 }
