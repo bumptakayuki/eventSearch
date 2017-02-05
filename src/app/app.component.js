@@ -172,10 +172,10 @@ var AppComponent = (function () {
      *
      * @param index
      */
-    AppComponent.prototype.onDetailClick = function (index) {
-        this.eventObj = this.selectedData[index];
-        this.detailComponent.openDialog();
-    };
+    //AppComponent.prototype.onDetailClick = function (index) {
+    //    this.eventObj = this.selectedData[index];
+    //    this.detailComponent.openDialog();
+    //};
     /**
      * resizeイベント
      */

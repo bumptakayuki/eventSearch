@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {OnInit} from '@angular/core';
 import {HttpService} from "./http.service";
-import {DetailComponent} from './detail.component';
+//import {DetailComponent} from './detail.component';
 import {ViewContainerRef, ViewChild} from '@angular/core';
 import {HostListener} from '@angular/core';
 import {Hero}    from './hero';
@@ -16,7 +16,7 @@ import {isEmpty} from "rxjs/operator/isEmpty";
 export class AppComponent implements OnInit {
 
   //ツアー明細ダイアログの参照取得
-  @ViewChild("detailDialog") detailComponent: DetailComponent;
+  //@ViewChild("detailDialog") detailComponent: DetailComponent;
 
   //選択したイベント情報(１件分）
   eventObj;
@@ -246,10 +246,10 @@ export class AppComponent implements OnInit {
    *
    * @param index
    */
-  private onDetailClick(index) {
-    this.eventObj = this.selectedData[index];
-    this.detailComponent.openDialog();
-  }
+  //private onDetailClick(index) {
+  //  this.eventObj = this.selectedData[index];
+  //  this.detailComponent.openDialog();
+  //}
 
   /**
    * resizeイベント

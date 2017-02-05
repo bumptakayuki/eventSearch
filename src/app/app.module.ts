@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import {JsonpModule } from '@angular/http';
 import {HttpService} from "./http.service";
 import {Ng2BootstrapModule} from 'ng2-bootstrap/ng2-bootstrap';
-import {DetailComponent } from './detail.component';
+//import {DetailComponent } from './detail.component';
 import { DatePickerModule } from 'ng2-datepicker/ng2-datepicker';
 import * as spinner from 'ng-spin-kit/app/spinners'
 
