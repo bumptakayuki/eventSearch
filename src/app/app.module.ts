@@ -12,7 +12,7 @@ import * as spinner from 'ng-spin-kit/app/spinners'
 @NgModule({
   declarations: [
     AppComponent,
-    DetailComponent,
+    //DetailComponent,
     spinner.RotatingPlaneComponent,
     spinner.DoubleBounceComponent,
     spinner.WaveComponent,
